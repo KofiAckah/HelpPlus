@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/11e2b95712.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="font-robBody">
+    <div class="bgHome">
+      <div class="flex justify-between px-5 bg-primary items-center py-2">
+        <div class="flex items-center justify-center">
+          <h1 class="text-white text-4xl font-style">Help Plus</h1>
+          <img src="Images/logo.png" alt="Logo" class="h-full" />
+        </div>
+        <div class="ml-10">
+          <div class="sm:hidden left-10" onclick="menuDisplay()">
+            <i class="fa-solid fa-bars fa-lg text-white" id="btnMenu"></i>
+          </div>
+          <nav class="sm:block hidden">
+            <ul class="grid grid-cols-2 sm:flex sm:items-center sm:flex-wrap">
+              <li class="navbar">
+                <a href="#">Home <i class="fa-solid fa-house"></i></a>
+              </li>
+              <li class="navbar">
+                <a href="#">About <i class="fa-solid fa-house"></i></a>
+              </li>
+              <li class="navbar">
+                <a href="#">Service <i class="fa-solid fa-house"></i></a>
+              </li>
+              <li class="navbar">
+                <a href="#">Home <i class="fa-solid fa-house"></i></a>
+              </li>
+              <li class="navbar">
+                <a href="#">About <i class="fa-solid fa-house"></i></a>
+              </li>
+              <li class="navbar">
+                <a href="#">Service <i class="fa-solid fa-house"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div
+        class="sm:grid grid-cols-2 mt-5 mx-10 lg:gap-44 md:gap-32 sm:gap-14 gap-5"
+      >
+        <div class="self-center justify-self-center">
+          <h2 class="text-5xl font-bold text-secondary-300 mx-auto text-center">
+            With Drugs We Can Reduce Dead Rate
+          </h2>
+          <p class="mt-10 text-justify">
+            With vaccination, we can reduce the number of cases of Covid-19
+            transmission and can create hard immunity
+          </p>
+        </div>
+        <div class="sm:mx-0 text-center sm:mt-0 mt-10 h-1/4">
+          <div
+            class="border-white border-8 rounded-tr-3xl rounded-bl-3xl bg-secondary-100 h-fit p-1 flex items-center justify-center sm:w-full w-1/2 mx-auto"
+          >
+            <img src="Images/doc.png" alt="doctor" class="sm:h-80 h-40" />
+          </div>
+        </div>
+      </div>
+      <button
+        class="m-10 sm:p-4 p-2 bg-primary sm:text-2xl text-xl rounded-3xl shadow-2xl text-white font-semibold border-2 border-white hover:bg-secondary-100 hover:text-primary transition duration-500 ease-in-out"
+      >
+        <a href="">Explore More</a>
+      </button>
+    </div>
+
+    <div>
+      <div
+        class="sm:grid grid-cols-3 m-5 items-center lg:gap-44 md:gap-32 sm:gap-14 gap-5"
+      >
+        <h2 class="text-3xl font-semibold text-secondary-300 text-center">
+          Why do you have to vaccinate?
+        </h2>
+        <p class="sm:mt-0 mt-3 col-span-2 text-justify text-gray-500">
+          There are three important reasons why you should vaccinate which we
+          describe as follows: Build immunity againts viruses, build hard
+          immunity and Lower levels of virus exposure.
+        </p>
+      </div>
+
+      <div
+        class="grid sm:grid-cols-3 grid-cols-2 lg:gap-24 md:gap-16 sm:gap-10 gap-5 sm:mx-10 m-5 items-center"
+      >
+        <!-- Shield -->
+        <div
+          class="sm:col-span-1 col-span-2 bg-secondary-100 p-3 hover:shadow-2xl transition duration-500 ease-in-out"
+        >
+          <div
+            class="bg-white text-center p-3 w-16 rounded-tr-3xl rounded-bl-3xl mx-auto"
+          >
+            <i
+              class="fa-solid fa-shield-halved fa-xl fa-beat text-secondary-100"
+            ></i>
+          </div>
+          <h2 class="text-xl text-center font-semibold text-white">
+            Build immunity againts viruses
+          </h2>
+          <p class="text-justify text-primary">
+            This is typically achieved through vaccinations, a healthy
+            lifestyle, and a balanced diet, which can enhance the immune
+            system's ability to fight off viral invaders.
+          </p>
+        </div>
+
+        <!-- Virus -->
+        <div
+          class="bg-gray-200 p-2 hover:shadow-2xl transition duration-500 ease-in-out"
+        >
+          <div
+            class="bg-white text-center p-3 w-12 rounded-tr-3xl rounded-bl-3xl mx-auto"
+          >
+            <i class="fa-solid fa-virus fa-beat text-primary fa-lg"></i>
+          </div>
+          <h2 class="text-lg text-center font-semibold text-primary">
+            Build hard immunity
+          </h2>
+          <p class="sm:text-justify text-left text-primary">
+            This immunity provides robust and sustained protection against
+            future encounters with the same pathogen, reducing the risk of
+            illness or infection. Usually through vaccination.
+          </p>
+        </div>
+
+        <!-- Mask -->
+        <div
+          class="bg-gray-200 p-2 hover:shadow-2xl transition duration-500 ease-in-out"
+        >
+          <div
+            class="bg-white text-center p-3 w-12 rounded-tr-3xl rounded-bl-3xl mx-auto"
+          >
+            <i class="fa-solid fa-mask-face fa-lg fa-beat text-primary"></i>
+          </div>
+          <h2 class="text-lg text-center font-semibold text-primary">
+            Lower levels of virus exposure
+          </h2>
+          <p class="sm:text-justify text-left text-primary">
+            This reduced exposure can lead to a lower risk of infection or a
+            milder illness if infected. Measures like social distancing and
+            mask-wearing aim to reduce virus exposure.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sm:grid grid-cols-2 gap-7 m-5">
+      <div class="self-center">
+        <h2 class="text-3xl font-semibold text-secondary-300 text-center">
+          We provide medicnes that have been clinically tested
+        </h2>
+        <p class="text-justify text-gray-500">
+          Do not be afraid to buy drugs in our place because it have been tested
+          and approved by the FDA
+        </p>
+
+        <!-- syringe -->
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <div class="mx-auto w-12 text-center p-2">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <p>
+              Vaccines that have been tested by several experiment animals and
+              humans
+            </p>
+          </div>
+
+          <!-- pills -->
+          <div>
+            <div class="mx-auto w-12 text-center p-2">
+              <i class="fa-solid fa-prescription-bottle-medical"></i>
+            </div>
+            <p>
+              Drugs and medicines that have been tested in a lab step by step
+              and in detail
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drug Image -->
+      <div class="sm:mx-0 sm:mt-0 mt-10 text-center h-1/3">
+        <div
+          class="border-primary border-8 rounded-tr-3xl rounded-bl-3xl bg-secondary-100 h-fit p-1 flex items-center justify-center sm:w-full w-1/2 mx-auto"
+        >
+          <img src="Images/med.png" alt="doctor" class="sm:h-80 h-40" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary pb-6">
+      <button>
+        <a href="">Buy A Drug</a>
+      </button>
+      <div class="sm:grid grid-cols-3 md:mx-24 sm:mx-10 mx-4 md:gap-10 gap-4">
+        <p class="text-secondary-100">
+          Remember to prioritize your well-being. Take care of your body and
+          mind by staying active, eating nutritious meals, getting enough sleep,
+          and managing stress.
+        </p>
+
+        <div class="sm:my-0 my-3">
+          <ul class="text-center">
+            <li class="foot">
+              <a href="#">Contact Us <i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="foot">
+              <a href="#">About Us <i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="foot">
+              <a href="#">Services <i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="foot">
+              <a href="#"
+                >Get A personal Doctor <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="foot">
+              <a href="#">Work With Us <i class="fa-solid fa-house"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <ul class="flex justify-center items-center mt-4">
+          <li class="social">
+            <i class="fa-brands fa-xl fa-facebook"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-twitter"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-github"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-youtube"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-facebook"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-linkedin"></i>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
