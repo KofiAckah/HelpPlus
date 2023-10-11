@@ -586,12 +586,12 @@ video {
   margin-top: 0.75rem;
 }
 
-.mt-5{
-  margin-top: 1.25rem;
-}
-
 .mt-4{
   margin-top: 1rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
 }
 
 .flex{
@@ -685,6 +685,10 @@ video {
 
 .rounded-3xl{
   border-radius: 1.5rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .rounded-bl-3xl{
@@ -832,6 +836,11 @@ video {
   color: rgb(113 90 255 / var(--tw-text-opacity));
 }
 
+.text-secondary-400{
+  --tw-text-opacity: 1;
+  color: rgb(94 252 232 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -913,6 +922,34 @@ video {
 .social i:hover{
   --tw-text-opacity: 1;
   color: rgb(85 193 255 / var(--tw-text-opacity));
+}
+
+.btnDrug{
+  background-color: #5EFCE8;
+  color: #102E4A;
+  padding: 5px;
+  position: relative;
+  left: 50%;
+  margin-left: auto;
+  transform: translateX(-50%);
+  bottom: 10px;
+  animation: moveIn 1000ms alternate infinite;
+}
+
+@keyframes moveIn {
+  0%{
+    background-color: #55C1FF;
+    color: #102E4A;
+  }
+
+  100%{
+    background-color: #102E4A;
+    color: #55C1FF;
+  }
+}
+
+.hover\:border-2:hover{
+  border-width: 2px;
 }
 
 .hover\:bg-secondary-100:hover{

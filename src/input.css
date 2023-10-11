@@ -32,3 +32,27 @@
 .social i{
   @apply text-white hover:text-secondary-100;
 }
+.btnDrug{
+  background-color: #5EFCE8;
+  color: #102E4A;
+  padding: 5px;
+  position: relative;
+  left: 50%;
+  margin-left: auto;
+  transform: translateX(-50%);
+  bottom: 10px; 
+  animation: moveIn 1000ms alternate infinite;
+
+}
+
+@keyframes moveIn {
+  0%{
+    background-color: #55C1FF;
+    color: #102E4A;
+  }
+  100%{
+    background-color: #102E4A;
+    color: #55C1FF;
+  }
+  
+}
