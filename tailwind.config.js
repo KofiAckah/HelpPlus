@@ -11,6 +11,7 @@ module.exports = {
           300: "#715AFF",
           400: "#5EFCE8",
         },
+        construct: "#4B52DB",
       },
       fontFamily: {
         robBody: ["Roboto"],
