@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Help Plus</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Images/logo.png" />
     <script
       src="https://kit.fontawesome.com/11e2b95712.js"
       crossorigin="anonymous"
@@ -20,30 +21,56 @@
         <div class="sm:hidden left-10" onclick="menuDisplay()">
           <i class="fa-solid fa-bars fa-lg text-white" id="btnMenu"></i>
         </div>
+
+        <!-- Nav for desktop view -->
         <nav class="sm:block hidden">
           <ul class="grid grid-cols-2 sm:flex sm:items-center sm:flex-wrap">
             <li class="navbar">
-              <a href="home.html">Home<i class="fa-solid fa-house"></i></a>
+              <a href="home.html">Home<i class="fa-solid fa-house ml-1"></i></a>
             </li>
             <li class="navbar">
               <a href="about.html"
-                >About<i class="fa-solid fa-circle-info"></i
+                >About<i class="fa-solid ml-1 fa-circle-info"></i
               ></a>
             </li>
             <li class="navbar">
               <a href="construction.html"
-                >Products<i class="fa-sharp fa-solid fa-bag-shopping"></i
+                >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
               ></a>
             </li>
             <li class="navbar">
               <a href="construction.html"
-                >Doctors<i class="fa-solid fa-user"></i
+                >Doctors<i class="fa-solid ml-1 fa-user"></i
               ></a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
+
+    <!-- Nav for mobile view -->
+    <nav class="hidden bg-primary py-2" id="navMobile">
+      <ul class="mx-auto">
+        <li class="navbarsm">
+          <a href="home.html">Home<i class="fa-solid fa-house ml-1"></i></a>
+        </li>
+        <li class="navbarsm">
+          <a href="about.html"
+            >About<i class="fa-solid ml-1 fa-circle-info"></i
+          ></a>
+        </li>
+        <li class="navbarsm">
+          <a href="construction.html"
+            >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
+          ></a>
+        </li>
+        <li class="navbarsm">
+          <a href="construction.html"
+            >Doctors<i class="fa-solid ml-1 fa-user"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- About Us -->
     <div class="py-3" style="background-color: #00a3e4">
@@ -93,6 +120,38 @@
         </p>
       </div>
     </div>
+
+    <!-- Our Goal -->
+    <div class="py-3" style="background-color: #1481ba">
+      <h2
+        class="sm:col-span-2 md:col-span-3 lg:col-span-4 text-center text-3xl font-bold mb-2 text-white"
+      >
+        Our Goal
+      </h2>
+      <div
+        class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-5 gap-10"
+      >
+        <p class="md:col-span-2 text-justify text-white">
+          At our health tip site, our mission is to empower individuals to make
+          informed decisions about their health and well-being. We strive to
+          provide reliable, evidence-based health tips and information that are
+          accessible and easy to understand. Our goal is to promote a holistic
+          approach to health, covering topics such as nutrition, fitness, mental
+          wellness, and preventive care. We believe that by sharing practical
+          and actionable tips, we can inspire and support individuals in
+          adopting healthier lifestyles and achieving their wellness goals. With
+          our dedication to delivering accurate and trustworthy content, we aim
+          to be a trusted resource for individuals seeking reliable health
+          information, enabling them to make positive changes that enhance their
+          overall quality of life.
+        </p>
+        <img
+          src="Images/Teacher Explaining.gif"
+          alt=""
+          class="lg:col-span-2 mx-auto"
+        />
+      </div>
+    </div>
     <footer class="bg-primary py-3">
       <div class="sm:grid grid-cols-3 md:mx-24 sm:mx-10 mx-4 md:gap-10 gap-4">
         <p class="text-secondary-100 text-center">
@@ -109,8 +168,8 @@
               ></a>
             </li>
             <li class="foot">
-              <a href="construction.html"
-                >About Us <i class="fa-solid fa-house"></i
+              <a href="about.html"
+                >About Us <i class="fa-solid ml-1 fa-circle-info"></i
               ></a>
             </li>
             <li class="foot">
@@ -152,6 +211,9 @@
             <i class="fa-brands fa-xl fa-linkedin"></i>
           </li>
         </ul>
+      </div>
+      <div class="flex justify-center items-center">
+        <a href="#" class="text-white">Back To Top</a>
       </div>
     </footer>
     <script src="index.js"></script>

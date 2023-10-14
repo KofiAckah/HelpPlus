@@ -550,10 +550,6 @@ video {
   margin: 2.5rem;
 }
 
-.m-2{
-  margin: 0.5rem;
-}
-
 .m-5{
   margin: 1.25rem;
 }
@@ -583,9 +579,16 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.ml-1{
+  margin-left: 0.25rem;
 }
 
 .ml-10{
@@ -612,16 +615,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
+.mt-2{
+  margin-top: 0.5rem;
 }
 
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
+.block{
+  display: block;
 }
 
 .flex{
@@ -693,6 +692,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -707,10 +710,6 @@ video {
 
 .gap-7{
   gap: 1.75rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .self-center{
@@ -815,8 +814,8 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pb-3{
-  padding-bottom: 0.75rem;
+.pt-2{
+  padding-top: 0.5rem;
 }
 
 .text-left{
@@ -924,8 +923,8 @@ video {
 }
 
 .navbar{
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
   text-decoration-line: underline;
 }
 
@@ -935,6 +934,25 @@ video {
 }
 
 .navbar a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(85 193 255 / var(--tw-text-opacity));
+}
+
+.navbarsm{
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.navbarsm a{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.navbarsm a:hover{
   --tw-text-opacity: 1;
   color: rgb(85 193 255 / var(--tw-text-opacity));
 }
@@ -1057,6 +1075,10 @@ video {
 
   .sm\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .sm\:mb-0{
+    margin-bottom: 0px;
   }
 
   .sm\:block{

@@ -1,4 +1,4 @@
-let menu = document.querySelector("nav");
+let menu = document.getElementById("navMobile");
 let btnMenu = document.getElementById("btnMenu");
 
 function menuDisplay() {

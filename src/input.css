@@ -8,11 +8,19 @@
 @tailwind utilities;
 
 .navbar{
-  @apply mx-1 underline;
+  @apply mx-3 underline;
 }
 .navbar a{
   @apply text-white hover:text-secondary-100;
 }
+
+.navbarsm{
+  @apply mx-3 mb-2 underline block text-center;
+}
+.navbarsm a{
+  @apply text-white hover:text-secondary-100;
+}
+
 
 .bgHome{
   background-image: linear-gradient( 135deg, #5EFCE8 5%, #736EFE 100%);
