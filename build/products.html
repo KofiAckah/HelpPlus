@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Plus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Images/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/11e2b95712.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-robBody">
+    <div class="flex justify-between px-5 bg-primary items-center py-2">
+      <div class="flex items-center justify-center">
+        <h1 class="text-white text-4xl font-style">Help Plus</h1>
+        <img src="Images/logo.png" alt="Logo" class="h-full" />
+      </div>
+      <div class="ml-10">
+        <div class="sm:hidden left-10" onclick="menuDisplay()">
+          <i class="fa-solid fa-bars fa-lg text-white" id="btnMenu"></i>
+        </div>
+
+        <!-- Nav for desktop view -->
+        <nav class="sm:block hidden">
+          <ul class="grid grid-cols-2 sm:flex sm:items-center sm:flex-wrap">
+            <li class="navbar">
+              <a href="home.html">Home<i class="fa-solid fa-house ml-1"></i></a>
+            </li>
+            <li class="navbar">
+              <a href="about.html"
+                >About<i class="fa-solid ml-1 fa-circle-info"></i
+              ></a>
+            </li>
+            <li class="navbar">
+              <a href="products.html"
+                >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
+              ></a>
+            </li>
+            <li class="navbar">
+              <a href="construction.html"
+                >Doctors<i class="fa-solid ml-1 fa-user"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Nav for mobile view -->
+    <nav class="hidden bg-primary py-2" id="navMobile">
+      <ul class="mx-auto">
+        <li class="navbarsm">
+          <a href="home.html">Home<i class="fa-solid fa-house ml-1"></i></a>
+        </li>
+        <li class="navbarsm">
+          <a href="about.html"
+            >About<i class="fa-solid ml-1 fa-circle-info"></i
+          ></a>
+        </li>
+        <li class="navbarsm">
+          <a href="products.html"
+            >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
+          ></a>
+        </li>
+        <li class="navbarsm">
+          <a href="construction.html"
+            >Doctors<i class="fa-solid ml-1 fa-user"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2 class="text-center md:text-2xl text-xl font-style mb-2">
+      Check Out some of the drug's we have
+    </h2>
+    <p class="text-center max-sm:mx-3 mb-1">
+      We have a wide range of drugs for different diseases and conditions.
+    </p>
+    <div
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 mx-5"
+    >
+      <div class="card">
+        <img
+          src="Images/Products/pexels-julie-viken-593451.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Advate</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi1" />
+          <label for="medi1" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/med.png"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Arestin</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi2" />
+          <label for="medi2" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/Products/pexels-nataliya-vaitkevich-7526062.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Herbal Medicine</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi3" />
+          <label for="medi3" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/Products/pexels-pixabay-159211.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Paracetamol</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi4" />
+          <label for="medi4" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/Products/pexels-pixabay-208512.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Flovent Diskus 250 mcg</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi5" />
+          <label for="medi5" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/Products/pexels-pixabay-208518.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Flovent HFA 44 mcg</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi6" />
+          <label for="medi6" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/Products/PR-ZINC-AND-ORS-300x300.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Zinc Tablets And ORS</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi7" />
+          <label for="medi7" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+
+      <!-- Repeating here -->
+      <div class="card">
+        <img
+          src="Images/Products/pexels-julie-viken-593451.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Advate</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi8" />
+          <label for="medi8" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/med.png"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Arestin</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi9" />
+          <label for="medi9" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/Products/pexels-nataliya-vaitkevich-7526062.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Herbal Medicine</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi10" />
+          <label for="medi10" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/Products/pexels-pixabay-159211.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Paracetamol</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi11" />
+          <label for="medi11" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/Products/pexels-pixabay-208512.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Flovent Diskus 250 mcg</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi12" />
+          <label for="medi12" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="Images/Products/pexels-pixabay-208518.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Flovent HFA 44 mcg</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi13" />
+          <label for="medi13" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="Images/Products/PR-ZINC-AND-ORS-300x300.jpg"
+          alt="drug1"
+          class="cardImg"
+          onclick="displayDoc()"
+        />
+        <div class="cardDiv">
+          <p class="cardTitle">Zinc Tablets And ORS</p>
+        </div>
+        <div class="badge">
+          <input type="checkbox" id="medi14" />
+          <label for="medi14" class="text-white ml-2">$400</label>
+        </div>
+      </div>
+    </div>
+
+    <button
+      onclick="calTotal()"
+      class="relative left-1/2 -translate-x-1/2 btnDrug text-xl font-semibold hover:border-2 border-white rounded-xl mt-4"
+    >
+      Check Out
+    </button>
+
+    <footer class="bg-primary py-3">
+      <div class="sm:grid grid-cols-3 md:mx-24 sm:mx-10 mx-4 md:gap-10 gap-4">
+        <p class="text-secondary-100 text-center">
+          Remember to prioritize your well-being. Take care of your body and
+          mind by staying active, eating nutritious meals, getting enough sleep,
+          and managing stress.
+        </p>
+
+        <div class="sm:my-0 my-3">
+          <ul class="text-center">
+            <li class="foot">
+              <a href="construction.html"
+                >Contact Us <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="foot">
+              <a href="about.html"
+                >About Us <i class="fa-solid ml-1 fa-circle-info"></i
+              ></a>
+            </li>
+            <li class="foot">
+              <a href="construction.html"
+                >Services <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="foot">
+              <a href="construction.html"
+                >Get A personal Doctor <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="foot">
+              <a href="construction.html"
+                >Work With Us <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <ul class="flex justify-center items-center my-7">
+          <li class="social">
+            <i class="fa-brands fa-xl fa-facebook"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-twitter"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-github"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-youtube"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-facebook"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-linkedin"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="flex justify-center items-center">
+        <a href="#" class="text-white">Back To Top</a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

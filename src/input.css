@@ -7,6 +7,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Navigation */
+/* Nav Desktop */
 .navbar{
   @apply mx-3 underline;
 }
@@ -14,6 +17,7 @@
   @apply text-white hover:text-secondary-100;
 }
 
+/* Nav Mobile */
 .navbarsm{
   @apply mx-3 mb-2 underline block text-center;
 }
@@ -21,25 +25,28 @@
   @apply text-white hover:text-secondary-100;
 }
 
-
+/* Home Page background */
 .bgHome{
   background-image: linear-gradient( 135deg, #5EFCE8 5%, #736EFE 100%);
 }
 
-.foot{
-  @apply flex items-center justify-center m-1;
-}
+/* Footer */
 
+.foot{
+  @apply flex items-center justify-center m-1 max-sm:my-2;
+}
 .foot a{
   @apply text-white hover:text-secondary-100;
 }
-
+/* Social Media Icons */
 .social{
-  @apply flex items-center justify-center m-1 mx-3;
+  @apply flex items-center justify-center m-1 mx-3 max-sm:my-2;
 }
 .social i{
-  @apply text-white hover:text-secondary-100;
+  @apply text-white hover:text-secondary-100 max-sm:mx-2;
 }
+
+/* Animation in Buy a Druy in Home */
 .btnDrug{
   background-color: #5EFCE8;
   color: #102E4A;
@@ -63,4 +70,21 @@
     color: #55C1FF;
   }
   
+}
+
+/* Card Images in Product */
+.card{
+  @apply bg-gray-200 rounded-3xl overflow-hidden md:shadow-md shadow-lg hover:shadow-lg transition-all ease-in-out duration-500 m-2 relative;
+}
+.cardImg{
+  @apply w-full h-32 sm:h-48 object-cover;
+}
+.cardDiv{
+  @apply  bg-white;
+}
+.cardTitle{
+  @apply text-primary text-center md:mx-4 mx-1 font-medium;
+}
+.badge{
+  @apply flex items-center absolute top-0 bg-gray-400 m-3 rounded-full px-2 opacity-80;
 }

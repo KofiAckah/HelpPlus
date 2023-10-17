@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help Plus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Images/logo.png" />
+    <script
+      src="https://kit.fontawesome.com/11e2b95712.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-robBody">
+    <div class="flex justify-between px-5 bg-primary items-center py-2">
+      <div class="flex items-center justify-center">
+        <h1 class="text-white text-4xl font-style">Help Plus</h1>
+        <img src="Images/logo.png" alt="Logo" class="h-full" />
+      </div>
+      <div class="ml-10">
+        <div class="sm:hidden left-10" onclick="menuDisplay()">
+          <i class="fa-solid fa-bars fa-lg text-white" id="btnMenu"></i>
+        </div>
+
+        <!-- Nav for desktop view -->
+        <nav class="sm:block hidden">
+          <ul class="grid grid-cols-2 sm:flex sm:items-center sm:flex-wrap">
+            <li class="navbar">
+              <a href="home.html">Home<i class="fa-solid fa-house ml-1"></i></a>
+            </li>
+            <li class="navbar">
+              <a href="about.html"
+                >About<i class="fa-solid ml-1 fa-circle-info"></i
+              ></a>
+            </li>
+            <li class="navbar">
+              <a href="products.html"
+                >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
+              ></a>
+            </li>
+            <li class="navbar">
+              <a href="construction.html"
+                >Doctors<i class="fa-solid ml-1 fa-user"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Nav for mobile view -->
+    <nav class="hidden bg-primary py-2" id="navMobile">
+      <ul class="mx-auto">
+        <li class="navbarsm">
+          <a href="home.html">Home<i class="fa-solid fa-house ml-1"></i></a>
+        </li>
+        <li class="navbarsm">
+          <a href="about.html"
+            >About<i class="fa-solid ml-1 fa-circle-info"></i
+          ></a>
+        </li>
+        <li class="navbarsm">
+          <a href="products.html"
+            >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
+          ></a>
+        </li>
+        <li class="navbarsm">
+          <a href="construction.html"
+            >Doctors<i class="fa-solid ml-1 fa-user"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <footer class="bg-primary py-3">
+      <div class="sm:grid grid-cols-3 md:mx-24 sm:mx-10 mx-4 md:gap-10 gap-4">
+        <p class="text-secondary-100 text-center">
+          Remember to prioritize your well-being. Take care of your body and
+          mind by staying active, eating nutritious meals, getting enough sleep,
+          and managing stress.
+        </p>
+
+        <div class="sm:my-0 my-3">
+          <ul class="text-center">
+            <li class="foot">
+              <a href="construction.html"
+                >Contact Us <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="foot">
+              <a href="about.html"
+                >About Us <i class="fa-solid ml-1 fa-circle-info"></i
+              ></a>
+            </li>
+            <li class="foot">
+              <a href="construction.html"
+                >Services <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="foot">
+              <a href="construction.html"
+                >Get A personal Doctor <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="foot">
+              <a href="construction.html"
+                >Work With Us <i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <ul class="flex justify-center items-center my-7">
+          <li class="social">
+            <i class="fa-brands fa-xl fa-facebook"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-twitter"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-github"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-youtube"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-facebook"></i>
+          </li>
+          <li class="social">
+            <i class="fa-brands fa-xl fa-linkedin"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="flex justify-center items-center">
+        <a href="#" class="text-white">Back To Top</a>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
