@@ -50,13 +50,13 @@ function calTotal() {
   let priceOfDrug = 0;
 
   if (medi1.checked) {
-    priceOfDrug += 400;
+    priceOfDrug += 250;
   }
   if (medi2.checked) {
     priceOfDrug += 400;
   }
   if (medi3.checked) {
-    priceOfDrug += 400;
+    priceOfDrug += 380;
   }
   if (medi4.checked) {
     priceOfDrug += 400;
