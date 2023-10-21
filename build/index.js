@@ -1,3 +1,4 @@
+// For menubar all pages
 let menu = document.getElementById("navMobile");
 let btnMenu = document.getElementById("btnMenu");
 
@@ -7,6 +8,8 @@ function menuDisplay() {
   btnMenu.classList.toggle("fa-times");
 }
 
+// For Products page
+// display the names of doctors randomly
 const Doctors = [
   "John Doe",
   "Jane Joy",
@@ -94,3 +97,29 @@ function calTotal() {
 
   alert(`Total cost of drugs is ${priceOfDrug}`);
 }
+
+// For Doctors page
+// display the names of doctors in different languages
+
+const docNameCurrentLanguage = document.getElementById("docNameInLanguages");
+
+let currentIndex = 0;
+
+const docLang = [
+  "doctor \uD83C\uDDEC\uD83C\uDDE7",
+  "médico 🇪🇸",
+  "médecin 🇫🇷",
+  "Arzt/Ärztin 🇩🇪",
+  "medico 🇮🇹",
+  "医生 (yīshēng) 🇨🇳",
+  "daktari 🇸🇸",
+  "doktor 🇹🇷",
+];
+
+function changingText() {
+  docNameCurrentLanguage.textContent = docLang[currentIndex];
+
+  currentIndex = (currentIndex + 1) % docLang.length;
+}
+
+setInterval(changingText, 3000);
