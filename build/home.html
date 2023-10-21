@@ -11,148 +11,227 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body class="font-robBody">
-    <div class="flex justify-between px-5 bg-primary items-center py-2">
-      <div class="flex items-center justify-center">
-        <h1 class="text-white text-4xl font-style">Help Plus</h1>
-        <img src="Images/logo.png" alt="Logo" class="h-full" />
+    <div class="bgHome">
+      <div class="flex justify-between px-5 bg-primary items-center py-2">
+        <div class="flex items-center justify-center">
+          <h1 class="text-white text-4xl font-style">Help Plus</h1>
+          <img src="Images/logo.png" alt="Logo" class="h-full" />
+        </div>
+        <div>
+          <div class="sm:hidden left-10" onclick="menuDisplay()">
+            <i class="fa-solid fa-bars fa-lg text-white" id="btnMenu"></i>
+          </div>
+
+          <!-- Nav for desktop view -->
+          <nav class="sm:block hidden">
+            <ul class="grid grid-cols-2 sm:flex sm:items-center sm:flex-wrap">
+              <li class="navbar">
+                <a href="home.html"
+                  >Home<i class="fa-solid fa-house ml-1"></i
+                ></a>
+              </li>
+              <li class="navbar">
+                <a href="about.html"
+                  >About<i class="fa-solid ml-1 fa-circle-info"></i
+                ></a>
+              </li>
+              <li class="navbar">
+                <a href="products.html"
+                  >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
+                ></a>
+              </li>
+              <li class="navbar">
+                <a href="doctors.html"
+                  >Doctors<i class="fa-solid ml-1 fa-user"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <div class="ml-10">
-        <div class="sm:hidden left-10" onclick="menuDisplay()">
-          <i class="fa-solid fa-bars fa-lg text-white" id="btnMenu"></i>
+
+      <!-- Nav for mobile view -->
+      <nav class="hidden bg-primary py-2" id="navMobile">
+        <ul class="mx-auto">
+          <li class="navbarsm">
+            <a href="home.html">Home<i class="fa-solid fa-house ml-1"></i></a>
+          </li>
+          <li class="navbarsm">
+            <a href="about.html"
+              >About<i class="fa-solid ml-1 fa-circle-info"></i
+            ></a>
+          </li>
+          <li class="navbarsm">
+            <a href="products.html"
+              >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
+            ></a>
+          </li>
+          <li class="navbarsm">
+            <a href="doctors.html"
+              >Doctors<i class="fa-solid ml-1 fa-user"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="sm:grid grid-cols-2 mt-5 mx-10 lg:gap-44 md:gap-32 sm:gap-14 gap-5"
+      >
+        <div class="self-center justify-self-center">
+          <h2 class="text-5xl font-bold text-secondary-300 mx-auto text-center">
+            With Drugs We Can Reduce Death Rate
+          </h2>
+          <p class="mt-10 text-justify">
+            With vaccination, we can reduce the number of cases of Covid-19
+            transmission and can create hard immunity
+          </p>
+        </div>
+        <div class="sm:mx-0 text-center sm:mt-0 mt-10 h-1/4">
+          <div
+            class="border-white border-8 rounded-tr-3xl rounded-bl-3xl bg-secondary-100 h-fit p-1 flex items-center justify-center sm:w-full w-1/2 mx-auto max-sm:w-full"
+          >
+            <img src="Images/doc.png" alt="doctor" class="sm:h-80" />
+          </div>
+        </div>
+      </div>
+      <button
+        class="m-10 sm:p-4 p-2 bg-primary sm:text-2xl text-xl rounded-3xl shadow-2xl text-white font-semibold border-2 border-white hover:bg-secondary-100 hover:text-primary transition duration-500 ease-in-out"
+      >
+        <a href="">Explore More</a>
+      </button>
+    </div>
+
+    <div>
+      <div
+        class="sm:grid grid-cols-3 m-5 items-center lg:gap-44 md:gap-32 sm:gap-14 gap-5"
+      >
+        <h2 class="text-3xl font-semibold text-secondary-300 text-center">
+          Why do you have to vaccinate?
+        </h2>
+        <p class="sm:mt-0 mt-3 col-span-2 text-justify text-gray-500">
+          There are three important reasons why you should vaccinate which we
+          describe as follows: Build immunity againts viruses, build hard
+          immunity and Lower levels of virus exposure.
+        </p>
+      </div>
+
+      <div
+        class="sm:grid sm:grid-cols-3 lg:gap-24 md:gap-16 sm:gap-10 gap-5 sm:mx-10 m-5 items-center"
+      >
+        <!-- Virus -->
+        <div
+          class="bg-gray-200 p-2 hover:shadow-2xl transition duration-500 ease-in-out h-full sm:mb-0 mb-4 max-sm:shadow-lg"
+        >
+          <div
+            class="bg-white text-center p-3 w-12 rounded-tr-3xl rounded-bl-3xl mx-auto"
+          >
+            <i class="fa-solid fa-virus fa-beat text-primary fa-lg"></i>
+          </div>
+          <h2 class="text-lg text-center font-semibold text-primary">
+            Build hard immunity
+          </h2>
+          <p class="sm:text-justify text-primary">
+            This immunity provides robust and sustained protection against
+            future encounters with the same pathogen, reducing the risk of
+            illness or infection. Usually through vaccination.
+          </p>
         </div>
 
-        <!-- Nav for desktop view -->
-        <nav class="sm:block hidden">
-          <ul class="grid grid-cols-2 sm:flex sm:items-center sm:flex-wrap">
-            <li class="navbar">
-              <a href="home.html">Home<i class="fa-solid fa-house ml-1"></i></a>
-            </li>
-            <li class="navbar">
-              <a href="about.html"
-                >About<i class="fa-solid ml-1 fa-circle-info"></i
-              ></a>
-            </li>
-            <li class="navbar">
-              <a href="products.html"
-                >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
-              ></a>
-            </li>
-            <li class="navbar">
-              <a href="doctors.html"
-                >Doctors<i class="fa-solid ml-1 fa-user"></i
-              ></a>
-            </li>
-          </ul>
-        </nav>
+        <!-- Shield -->
+        <div
+          class="sm:col-span-1 col-span-2 bg-secondary-100 p-3 hover:shadow-2xl transition duration-500 ease-in-out sm:mb-0 mb-4 max-sm:shadow-lg"
+        >
+          <div
+            class="bg-white text-center p-3 w-16 rounded-tr-3xl rounded-bl-3xl mx-auto"
+          >
+            <i
+              class="fa-solid fa-shield-halved fa-xl fa-beat text-secondary-100"
+            ></i>
+          </div>
+          <h2 class="text-xl text-center font-semibold text-white">
+            Build immunity againts viruses
+          </h2>
+          <p class="text-justify text-primary">
+            This is typically achieved through vaccinations, a healthy
+            lifestyle, and a balanced diet, which can enhance the immune
+            system's ability to fight off viral invaders.
+          </p>
+        </div>
+
+        <!-- Mask -->
+        <div
+          class="bg-gray-200 p-2 hover:shadow-2xl transition duration-500 ease-in-out h-full sm:mb-0 mb-4 max-sm:shadow-lg"
+        >
+          <div
+            class="bg-white text-center p-3 w-12 rounded-tr-3xl rounded-bl-3xl mx-auto"
+          >
+            <i class="fa-solid fa-mask-face fa-lg fa-beat text-primary"></i>
+          </div>
+          <h2 class="text-lg text-center font-semibold text-primary">
+            Lower levels of virus exposure
+          </h2>
+          <p class="sm:text-justify text-primary">
+            This reduced exposure can lead to a lower risk of infection or a
+            milder illness if infected. Measures like social distancing and
+            mask-wearing aim to reduce virus exposure.
+          </p>
+        </div>
       </div>
     </div>
 
-    <!-- Nav for mobile view -->
-    <nav class="hidden bg-primary py-2" id="navMobile">
-      <ul class="mx-auto">
-        <li class="navbarsm">
-          <a href="home.html">Home<i class="fa-solid fa-house ml-1"></i></a>
-        </li>
-        <li class="navbarsm">
-          <a href="about.html"
-            >About<i class="fa-solid ml-1 fa-circle-info"></i
-          ></a>
-        </li>
-        <li class="navbarsm">
-          <a href="products.html"
-            >Products<i class="fa-sharp fa-solid ml-1 fa-bag-shopping"></i
-          ></a>
-        </li>
-        <li class="navbarsm">
-          <a href="doctors.html"
-            >Doctors<i class="fa-solid ml-1 fa-user"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- About Us -->
-    <div class="py-3" style="background-color: #00a3e4">
-      <h2 class="text-center text-3xl font-bold mb-2 text-white">About Us</h2>
-      <div
-        class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-5 gap-10 items-center"
-      >
-        <p class="md:col-span-2 text-justify text-white max-sm:order-last">
-          Welcome to our health tip site, where we are passionate about helping
-          individuals live healthier and happier lives. We understand that
-          navigating the vast world of health and wellness can be overwhelming,
-          which is why we have created this platform to provide you with
-          reliable and practical health tips. Our team of experienced health
-          professionals and wellness enthusiasts are dedicated to curating and
-          sharing evidence-based information on various aspects of health. From
-          nutrition and fitness to mental well-being and preventive care, we
-          cover a wide range of topics to cater to your holistic health needs.
+    <div class="sm:grid grid-cols-2 gap-7 m-5">
+      <div class="self-center">
+        <h2 class="text-3xl font-semibold text-secondary-300 text-center">
+          We provide medicines that have been clinically tested
+        </h2>
+        <p class="text-justify text-gray-500">
+          Do not be afraid to buy drugs in our place because it has been tested
+          and approved by the FDA
         </p>
-        <img src="Images/workabout.gif" alt="" class="lg:col-span-2 mx-auto" />
+
+        <!-- syringe -->
+        <div class="sm:grid grid-cols-2 gap-2">
+          <div>
+            <div class="mx-auto w-12 text-center p-2">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <p>
+              Vaccines that have been tested by several experiment animals and
+              humans
+            </p>
+          </div>
+
+          <!-- pills -->
+          <div>
+            <div class="mx-auto w-12 text-center p-2">
+              <i class="fa-solid fa-prescription-bottle-medical"></i>
+            </div>
+            <p>
+              Drugs and medicines that have been tested in a lab step by step
+              and in detail
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drug Image -->
+      <div class="sm:mx-0 sm:mt-0 mt-10 text-center h-1/3">
+        <div
+          class="border-primary border-8 rounded-tr-3xl rounded-bl-3xl bg-secondary-100 h-fit p-1 flex items-center justify-center sm:w-full w-1/2 mx-auto max-sm:w-full"
+        >
+          <img src="Images/med.png" alt="doctor" class="sm:h-80 h-40" />
+        </div>
       </div>
     </div>
 
-    <!-- Our Mission -->
-    <div class="py-3" style="background-color: #efece9">
-      <h2
-        class="sm:col-span-2 md:col-span-3 lg:col-span-4 text-center text-3xl font-bold mb-2 text-primary"
+    <footer class="bg-primary pb-6">
+      <button
+        class="btnDrug text-xl font-semibold hover:border-2 border-white rounded-xl"
       >
-        Our Mission
-      </h2>
-      <div
-        class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-5 gap-10 items-center"
-      >
-        <img src="Images/Working.gif" alt="" class="lg:col-span-2 mx-auto" />
-        <p class="md:col-span-2 text-justify text-primary">
-          At our health tip site, our mission is to empower individuals to make
-          informed decisions about their health and well-being. We strive to
-          provide reliable, evidence-based health tips and information that are
-          accessible and easy to understand. Our goal is to promote a holistic
-          approach to health, covering topics such as nutrition, fitness, mental
-          wellness, and preventive care. We believe that by sharing practical
-          and actionable tips, we can inspire and support individuals in
-          adopting healthier lifestyles and achieving their wellness goals. With
-          our dedication to delivering accurate and trustworthy content, we aim
-          to be a trusted resource for individuals seeking reliable health
-          information, enabling them to make positive changes that enhance their
-          overall quality of life.
-        </p>
-      </div>
-    </div>
-
-    <!-- Our Goal -->
-    <div class="py-3" style="background-color: #1481ba">
-      <h2
-        class="sm:col-span-2 md:col-span-3 lg:col-span-4 text-center text-3xl font-bold mb-2 text-white"
-      >
-        Our Goal
-      </h2>
-      <div
-        class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-5 gap-10 items-center"
-      >
-        <p class="md:col-span-2 text-justify text-white">
-          At our health tip site, our mission is to empower individuals to make
-          informed decisions about their health and well-being. We strive to
-          provide reliable, evidence-based health tips and information that are
-          accessible and easy to understand. Our goal is to promote a holistic
-          approach to health, covering topics such as nutrition, fitness, mental
-          wellness, and preventive care. We believe that by sharing practical
-          and actionable tips, we can inspire and support individuals in
-          adopting healthier lifestyles and achieving their wellness goals. With
-          our dedication to delivering accurate and trustworthy content, we aim
-          to be a trusted resource for individuals seeking reliable health
-          information, enabling them to make positive changes that enhance their
-          overall quality of life.
-        </p>
-        <img
-          src="Images/Teacher Explaining.gif"
-          alt=""
-          class="lg:col-span-2 mx-auto"
-        />
-      </div>
-    </div>
-    <footer class="bg-primary py-3">
+        <a href="products.html">Buy A Drug</a>
+      </button>
       <div class="sm:grid grid-cols-3 md:mx-24 sm:mx-10 mx-4 md:gap-10 gap-4">
         <p class="text-secondary-100 text-center">
           Remember to prioritize your well-being. Take care of your body and
