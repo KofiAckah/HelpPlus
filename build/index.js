@@ -62,7 +62,7 @@ function calTotal() {
     priceOfDrug += 400;
   }
   if (medi5.checked) {
-    priceOfDrug += 400;
+    priceOfDrug += 200;
   }
   if (medi6.checked) {
     priceOfDrug += 400;
